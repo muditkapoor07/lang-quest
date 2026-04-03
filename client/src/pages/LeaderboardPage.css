@@ -1,0 +1,94 @@
+.lb-header {
+  margin-bottom: 1.75rem;
+}
+
+.lb-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 0.25rem;
+}
+
+.lb-subtitle {
+  font-size: 0.9375rem;
+  color: var(--gray-500);
+}
+
+.lb-table {
+  background: white;
+  border-radius: 1.25rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.lb-thead {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px;
+  padding: 0.875rem 1.5rem;
+  background: var(--gray-50);
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.lb-points-head { text-align: right; }
+
+.lb-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--gray-100);
+  align-items: center;
+  transition: background 0.1s;
+}
+
+.lb-row:last-child { border-bottom: none; }
+.lb-row:hover { background: var(--gray-50); }
+
+.lb-row.current-user {
+  background: var(--purple-50);
+  border-color: var(--purple-100);
+}
+
+.lb-rank {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-600);
+}
+
+.lb-name {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--gray-800);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lb-you {
+  font-size: 0.7rem;
+  font-weight: 700;
+  background: var(--purple-600);
+  color: white;
+  padding: 0.15rem 0.5rem;
+  border-radius: 99px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.lb-points {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  text-align: right;
+}
+
+.lb-empty {
+  padding: 3rem;
+  text-align: center;
+  color: var(--gray-400);
+  font-size: 0.9375rem;
+}

@@ -1,0 +1,159 @@
+.progress-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 0.25rem;
+  margin-top: 1rem;
+}
+
+.progress-subtitle {
+  font-size: 0.9375rem;
+  color: var(--gray-500);
+  margin-bottom: 1.75rem;
+}
+
+/* Streak banner */
+.streak-banner {
+  background: linear-gradient(135deg, #f97316, #fb923c, #fbbf24);
+  border-radius: 1.25rem;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.streak-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.streak-flame { font-size: 2.25rem; }
+
+.streak-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.streak-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1.1;
+}
+
+.streak-longest {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.8);
+}
+.streak-longest strong { color: white; }
+
+/* Stats grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .stats-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.stat-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: white;
+}
+
+.stat-icon-purple { background: var(--purple-500); }
+.stat-icon-green { background: #22c55e; }
+.stat-icon-blue { background: #3b82f6; }
+.stat-icon-orange { background: var(--orange); }
+
+.stat-label {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.2rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  line-height: 1;
+}
+
+/* Course completion */
+.completion-card {
+  background: white;
+  border-radius: 1.25rem;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.completion-title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 1rem;
+}
+
+.completion-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  margin-bottom: 0.625rem;
+}
+
+.completion-bar {
+  flex: 1;
+  height: 12px;
+  background: var(--gray-100);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.completion-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--purple-500), var(--purple-600));
+  border-radius: 99px;
+  transition: width 0.6s ease;
+}
+
+.completion-pct {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--purple-600);
+  min-width: 40px;
+  text-align: right;
+}
+
+.completion-sub {
+  font-size: 0.875rem;
+  color: var(--gray-400);
+}
