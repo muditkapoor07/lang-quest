@@ -1,4 +1,4 @@
-require('dotenv').config({ path: require('path').join(__dirname, '../.env') });
+require('dotenv').config(); // Render injects env vars directly; .env only used locally
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
